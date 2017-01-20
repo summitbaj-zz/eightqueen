@@ -1,0 +1,13 @@
+<table border=2>
+<? for($i=0; $i<=7; $i++){ ?>
+<tr>
+<? for($j=0; $j<=7; $j++){ ?>
+<td width="100" height="100" bgcolor="<? if($chess[$i][$j]==1){?>#00dd00<?}
+elseif($chess[$i][$j]==2){
+	?>#999<?}else{ ?><? if(($j+$i)%2==0){ ?>#ccc<? } ?><? } ?>">
+(<? echo $i; ?>, <? echo $j; ?>)
+</td>
+<? } ?>
+</tr>
+<? } ?>
+</table> 
